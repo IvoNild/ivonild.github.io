@@ -1,0 +1,3 @@
+1. Importar a font(tipo de létras)
+2. Criar as varaiáveis de cor,tipografia, do tamanho de letras , daespeçura, as margins e z-index.
+2.Remover as margins, padding e box-sizing de tudo.

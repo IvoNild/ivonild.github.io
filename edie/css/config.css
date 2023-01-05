@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500&display=swap');
+
+/*--------------CSS VARIABLES-----------*/
+
+:root {
+  --height-header: 4.5rem;
+
+  /*-----------COLORS-------------*/
+
+  --bg-color: #ffffff;
+  --first-color: #333333;
+  --p-color: #4f4f4f;
+  --blue-color: #2d9cdb;
+  --green-color: #27ae60;
+  --red-color: #eb5757;
+  --bg-footer: #100e1d;
+  --small-color: #828282;
+  --input-color: #f2f2f2;
+  --placeholder-color: #bdbdbd;
+
+  /*-------FONT AND TYPOGRAPH-------*/
+
+  --body-font: 'Poppins', sans-serif;
+  --logo-font: 'Heebo', sans-serif;
+
+  font-size: 96%;
+  --big2-font-size: 3rem; /*48px*/
+  --big-font-size: 2.25rem; /*36px*/
+  --h1-font-size: 1.5rem; /*24px*/
+  --p-font-size: 1.125rem; /*18px*/
+  --normal-font-size: 1rem; /*16px*/
+  --small-font-size: 0.875rem; /*14px*/
+  --small2-font-size: 0.75rem; /*12px*/
+  --small3-font-size: 0.625rem; /*10px*/
+  /*------------FONT-WEIGHT-------------*/
+
+  --font-light: 300;
+  --font-medium: 400;
+  --font-bold: 700;
+
+  /*--------------MARGINS---------------*/
+  --mb-1: 0.5rem; /*8px*/
+  --mb-2: 1rem; /*16px*/
+  --mb-3: 1.5rem; /*24px*/
+  --mb-4: 2rem; /*32px*/
+  --mb-5: 2.5rem; /*40px*/
+  --mb-6: 3rem; /*48px*/
+
+  /*--------Z-INDEX'S--------*/
+
+  --z-fixed: 100;
+  --z-toolip: 10;
+}
+
+/*---------BASE---------*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--bg-color);
+  color: var(--title-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--------------BUTTONS-------------*/
+
+/*--------------LAYOUT----------------*/
+
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}

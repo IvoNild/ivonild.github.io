@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;700&family=Roboto:wght@400;700&display=swap');
+
+/* ---------- CSS VARIABLES ----------  */
+
+:root {
+  /* --------- HEADER SIZE ---------- */
+
+  --header-height: 4.5rem;
+
+  /* ----------- COLORS ---------- */
+
+  --bgc-color: #fbfbfb;
+  --bg-color: #ffffff;
+  --small-color: #b7bcce;
+  --first-color: #334680;
+  --second-color: #b9bdcf;
+  --blue-color: #1e86ff;
+  --logo-color: #282538;
+
+  /* ---------- TYPOGRAPH AND FONTS ---------- */
+
+  --first-font: 'Poppins', sans-serif;
+  --second-font: 'Roboto', sans-serif;
+  --footer-font: 'Montserrat', sans-serif;
+
+  /* ---------- FONT SIZES ---------- */
+
+  font-size: 96%;
+
+  --big-font-size: 1.5rem; /*24px*/
+  --h2-font-size: 1.125rem; /*18px*/
+  --normal-font-size: 1rem; /*16px*/
+  --small-font-size: 0.875rem; /*14*/
+  --small2-font-size: 0.75rem; /*12px*/
+
+  /* ---------- FONT WEIGHT ---------- */
+  --font-light: 300;
+  --font-medium: 400;
+  --font-bold: 700;
+
+  /*--------------MARGINS---------------*/
+  --mb-1: 0.5rem; /*8px*/
+  --mb-2: 1rem; /*16px*/
+  --mb-3: 1.5rem; /*24px*/
+  --mb-4: 2rem; /*32px*/
+  --mb-5: 2.5rem; /*40px*/
+  --mb-6: 3rem; /*48px*/
+}
+
+/* ---------- BASE ---------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--bgc-color);
+  font-family: var(--second-font);
+  font-size: var(--normal-font-size);
+  color: var(--first-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------- LAYOUT ---------- */
+
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}

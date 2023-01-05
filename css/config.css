@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Nunito:ital,wght@0,800;1,200&family=Varela&display=swap');
+
+:root {
+  /* header height  */
+  --height-header: 4.5rem;
+
+  /* --------------COLORS-------------- */
+  --title-color: #000000cc;
+  --paragraph-color: #10071a;
+  --white-color: #ffffff;
+  --first-color: #000000;
+  --alt-color: #f3f3f3;
+  --button-color: #3e64ff;
+
+  /* ------------- FONT AND TYPOGRAPH-------------- */
+  --title-font: 'Nunito', sans-serif;
+  --paragraph-font: 'Julius Sans One', sans-serif;
+  --normal-font: 'Varela', sans-serif;
+
+  font-size: 80%;
+  --big2-font-size: 2.5rem; /* 40px */
+  --big-font-size: 2rem; /* 32px */
+  --h1-font-size: 1.5rem; /* 24px */
+  --h2-font-size: 1.25rem; /*20px*/
+  --p-font-size: 1rem; /*16px*/
+  --normal-font-size: 0.938rem; /*15px*/
+  --small-font-size: 0.813rem; /*13px*/
+
+  /* --------- MARGINS ------------ */
+  --mg-1: 0.5rem; /* 8px */
+  --mg-2: 1rem; /* 16px */
+  --mg-3: 1.5rem; /* 24px */
+  --mg-4: 2rem; /* 32px */
+  --mg-5: 2.5rem; /* 40px */
+  --mg-6: 3rem; /* 48px */
+
+  /* ---------- Z-UINDEX´S ------------ */
+  --z-fixed: 100;
+  --z-toolip: 10;
+}
+
+/* -----------BASE----------- */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  font-size: var(--p-font-size);
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----------- BUTTON ----------- */
+
+/* ----------- LAYOUT ----------- */
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}

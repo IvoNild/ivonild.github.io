@@ -1,0 +1,292 @@
+/* 0006 0000 1424 1049 3018 9 */
+
+/* ---------- HEADER ---------- */
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  font-family: var(--first-font);
+}
+
+.logo {
+  font-weight: var(--font-medium);
+}
+
+.logo a {
+  color: var(--logo-color);
+}
+
+/* ---------- HOME ---------- */
+.home__container {
+  background-image: url('../assets/backgroundImg.png');
+  height: 8.625rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: var(--mb-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__container form {
+  width: 90%;
+}
+
+.home__container form .input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home__container form input {
+  background-color: var(--bg-color);
+  width: 100%;
+  padding-block: var(--mb-2);
+  padding-left: var(--mb-6);
+  padding-right: 8.125rem;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  color: var(--second-color);
+  font-size: var(--small2-font-size);
+  font-family: var(--second-font);
+}
+.home__container form input::placeholder {
+  color: var(--second-color);
+}
+
+.home__container form i {
+  position: absolute;
+  left: var(--mb-3);
+  color: var(--second-color);
+  font-size: var(--normal-font-size);
+}
+
+.home__container form button {
+  position: absolute;
+  right: var(--mb-1);
+  padding: var(--mb-1) var(--mb-3);
+  font-size: var(--normal-font-size);
+  background-color: var(--blue-color);
+  color: var(--bg-color);
+  border: none;
+  border-radius: 0.25rem;
+  font-family: var(--second-font);
+}
+
+/* ---------- FILTER ---------- */
+
+.filter__container .input-check {
+  padding-block: var(--mb-3);
+  padding-left: var(--mb-2);
+  font-size: var(--small-font-size);
+  font-family: var(--first-font);
+  color: var(--first-color);
+  font-weight: var(--font-bold);
+}
+
+.filter__container .input-check input {
+  margin-right: var(--mb-1);
+}
+
+.filter__container .input-check div {
+  margin-bottom: var(--mb-1);
+  display: flex;
+}
+
+.filter__container .input-check div input {
+  margin-right: var(--mb-1);
+}
+
+.filter__container form h2 {
+  margin-bottom: var(--mb-2);
+  color: var(--second-color);
+  font-size: var(--small-font-size);
+  font-family: var(--first-font);
+  font-weight: var(--font-bold);
+}
+
+.filter__container form .input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filter__container form .input-group i {
+  position: absolute;
+  left: var(--mb-2);
+  color: var(--second-color);
+}
+
+.filter__container form .input-group input {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--bg-color);
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-block: var(--mb-2);
+  padding-inline: var(--mb-6);
+  font-size: var(--small2-font-size);
+  color: var(--second-color);
+}
+
+.filter__container form .input-group input::placeholder {
+  color: var(--second-color);
+}
+
+.filter__box {
+  display: flex;
+  padding: var(--mb-2);
+  background-color: var(--bg-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: var(--mb-2);
+  border-radius: 0.25rem;
+}
+.filter__box .logo-company {
+  width: 5.625rem;
+  height: 5.625rem;
+  margin-right: var(--mb-2);
+  display: flex;
+  justify-content: center;
+  border-radius: 0.25rem;
+  background-color: #f2f2f2;
+}
+
+.filter__box .logo-company p {
+  font-size: var(--small2-font-size);
+  color: #bdbdbd;
+  display: flex;
+  align-items: center;
+}
+
+.filter__box .logo-company img {
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.filter__box .info p {
+  font-family: var(--second-font);
+  font-size: var(--small2-font-size);
+  font-weight: var(--font-bold);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.filter__box .info h2 {
+  font-family: var(--second-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  margin-bottom: var(--mb-2);
+}
+
+.filter__box .info div:nth-child(1) > span {
+  border: 1px solid var(--first-color);
+  font-size: var(--small2-font-size);
+  padding: 0.375rem;
+  color: var(--first-color);
+  border-radius: 0.25rem;
+  font-weight: var(--font-bold);
+}
+.filter__box .info div:nth-child(2) {
+  margin-top: var(--mb-3);
+  font-size: var(--small2-font-size);
+}
+
+.filter__box .info div:nth-child(2) span {
+  margin-right: var(--mb-3);
+  color: var(--second-color);
+}
+.list__number {
+  display: none;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  padding-top: var(--mb-2);
+  padding-bottom: var(--mb-3);
+}
+
+footer p {
+  text-align: center;
+  color: var(--second-color);
+  font-size: var(--small-font-size);
+}
+footer p a {
+  color: var(--second-color);
+  text-decoration: underline;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media (min-width: 760px) {
+  .home__container form {
+    width: 80%;
+  }
+  .filter__container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .filter__container > div:nth-child(2) {
+    padding-block: var(--mb-3);
+    padding-left: var(--mb-3);
+  }
+
+  .filter__box .info {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+  }
+
+  .filter__box .info div:nth-child(2) {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .filter__box .info div:nth-child(2) span {
+    margin: 0;
+    margin-left: var(--mb-3);
+  }
+
+  .list__number {
+    display: flex;
+    justify-content: end;
+    margin-top: var(--mb-6);
+    padding-bottom: var(--mb-6);
+  }
+  .list__number ul {
+    display: flex;
+  }
+  .list__number ul li {
+    margin-left: var(--mb-2);
+  }
+  .list__number ul li a {
+    padding: var(--mb-2);
+    border: 1px solid;
+    color: var(--small-color);
+    font-size: var(--small2-font-size);
+    border-radius: 0.25rem;
+  }
+
+  .list__number ul li a:hover {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+  }
+
+  .list__number ul li a.active {
+    background-color: var(--blue-color);
+    color: var(--bg-color);
+  }
+}
+
+@media (min-width: 960px) {
+  .home__container form {
+    width: 49.375rem;
+  }
+}
