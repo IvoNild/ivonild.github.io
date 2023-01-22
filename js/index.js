@@ -26,7 +26,8 @@ ScrollReveal({
   .title__education,
   .portifolio .title,
   .skill .title,
-  .img__profile  
+  .img__profile,
+  .footer div  
 `)
 
 ScrollReveal({
