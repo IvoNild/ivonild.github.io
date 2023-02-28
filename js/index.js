@@ -17,28 +17,85 @@ toggle__close__menu.addEventListener('click', closeMenu)
 
 // EFEITOS DE SCROLL REVEAL
 
-ScrollReveal({
-  origin: 'bottom',
-  distance: '100px',
-  duration: 800
-}).reveal(`
-  #home .home__info,
-  .title__education,
-  .portifolio .title,
-  .skill .title,
-  .img__profile,
-  .footer div  
-`)
+window.sr = ScrollReveal({ reset: true })
 
-ScrollReveal({
+sr.reveal('#home .home__info', {
   origin: 'bottom',
   distance: '100px',
-  duration: 1050
-}).reveal(`
-  .about__me .title,
-  .about__me .paragraph,
-  .about__me .personal__info,
-  .education__info,
-  .info__project__data,
-  .list__skill
-`)
+  duration: 1300
+})
+
+sr.reveal(
+  '.title__education,.skill .title , .portifolio .title, .img__profile, .list__skill, .footer',
+  {
+    origin: 'left',
+    distance: '100px',
+    duration: 900
+  }
+)
+
+sr.reveal('.education__info, .about__me', {
+  origin: 'right',
+  distance: '100px',
+  duration: 2000
+})
+sr.reveal('.info__project__data', {
+  origin: 'bottom',
+  distance: '100px',
+  duration: 2000
+})
+
+sr.reveal('.img__project', {
+  origin: 'top',
+  distance: '100px',
+  duration: 900
+})
+
+// ScrollReveal({
+//   origin: 'bottom',
+//   distance: '100px',
+//   duration: 800
+// }).reveal(`
+//   #home .home__info,
+//   .title__education,
+//   .portifolio .title,
+//   .skill .title,
+//   .img__profile,
+//   .footer div
+// `)
+
+// ScrollReveal({
+//   origin: 'bottom',
+//   distance: '100px',
+//   duration: 1050
+// }).reveal(`
+//   .about__me .title,
+//   .about__me .paragraph,
+//   .about__me .personal__info,
+//   .education__info,
+//   .info__project__data,
+//   .list__skill
+// `)
+
+// Manipulação de texto
+document.addEventListener('DOMContentLoaded', () => {
+  new TypeIt('.animated', {
+    speed: 200,
+    loop: true
+  })
+    .type('Web', { delay: 1500 })
+    .delete(3)
+    .type('Mobile', { delay: 1100 })
+    .go()
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  new TypeIt('.animatedFooter', {
+    speed: 200,
+    loop: true
+  })
+    .type('Web', { delay: 1500 })
+    .delete(3)
+    .type('Mobile', { delay: 1100 })
+    .go()
+})
