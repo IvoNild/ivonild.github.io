@@ -35,7 +35,7 @@ sr.reveal(
 )
 
 sr.reveal('.education__info, .about__me', {
-  origin: 'right',
+  origin: 'left',
   distance: '100px',
   duration: 2000
 })
