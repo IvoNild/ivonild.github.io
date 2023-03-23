@@ -245,11 +245,12 @@ footer {
 .footerItem li a {
   color: var(--secondaryFontColor);
 }
-footer .bd-container > p a {
-  text-decoration: underline;
-  color: var(--mainColor);
-}
+
 /* Media queries */
+
+/* Comprimento mínimo de 560px */
+@media (min-width: 560px) {
+}
 
 /* Comprimento mínimo de 768px */
 @media (min-width: 768px) {
@@ -434,17 +435,10 @@ footer .bd-container > p a {
   /* Footer */
   footer .bd-container {
     display: flex;
-    flex-direction: column;
-  }
-  .footerItems {
-    display: flex;
     justify-content: space-between;
   }
   .footerItem:nth-child(1) {
     max-width: 40%;
   }
-
-  footer .bd-container > p {
-    text-align: center;
-  }
 }
+
