@@ -440,5 +440,21 @@ footer {
   .footerItem:nth-child(1) {
     max-width: 40%;
   }
-}
+  footer .bd-container {
+    display: flex;
+    flex-direction: column;
+  }
 
+  footer .bd-container > p {
+    text-align: center;
+  }
+
+  footer .bd-container > p a {
+    text-decoration: underline;
+    color: var(--mainColor);
+  }
+  .footerItems {
+    display: flex;
+    justify-content: space-between;
+  }
+}
