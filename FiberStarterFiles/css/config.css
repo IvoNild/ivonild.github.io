@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Manrope&display=swap');
+
+:root {
+  /* // Variáveis padrão */
+  font-size: 62.5%;
+
+  /* //Altura do header */
+  --headerHeight: 7.2rem;
+
+  /* //Cores */
+  --mainColor: #541ada;
+  --mainBackgroundColor: #fbf8f3;
+  --secondaryBackgroundColor: #fff;
+  --mainFontColor: #000;
+  --secondaryFontColor: #4f4f4f;
+
+  /* //Fontes */
+  --mainFont: 'Manrope', sem serifa;
+  --secondaryFont: 'Josefin Sans', sem serifa;
+
+  /* //Tamanho de fontes */
+  --bigTitleFont: 4rem;
+  --paragraphFont: 1.8rem;
+  --smallFont: 1.4rem;
+
+  /* //Espaçamento */
+  --mg8: 0.8rem;
+  --mg16: 1.6rem;
+  --mg32: 3.2rem;
+  --mg40: 4rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: var(--mainFont);
+  font-size: var(--paragraphFont);
+  background-color: #fff;
+  color: var(--mainFontColor);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: var(--paragraphFont);
+  font-weight: 700;
+  font-family: var(--secondaryFont);
+}
+
+.bd-container {
+  max-width: 1200px;
+  width: calc(100% - 6rem);
+}
+
+/* Estilo Comun */
+
+.bigTitle {
+  font-size: var(--bigTitleFont);
+  font-family: var(--secondaryFont);
+  margin-bottom: var(--mg8);
+}
+
+.paragraph {
+  color: var(--secondaryFontColor);
+  font-size: var(--paragraphFont);
+  margin-bottom: var(--mg16);
+}
+
+.littleTitle {
+  font-size: var(--paragraphFont);
+  font-family: var(--secondaryFont);
+  margin-bottom: var(--mg16);
+}
+
+.fontSize20 {
+  font-size: 2.2rem;
+}
+
+.littleTitleMg {
+  margin-top: var(--mg16);
+}
+
+.mainColor {
+  color: var(--mainColor);
+}
+
+.whiteColor {
+  color: white;
+}
+
+.mg-bottom0 {
+  margin-bottom: 0;
+}

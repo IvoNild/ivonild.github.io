@@ -1,0 +1,450 @@
+/* CABEÇALHO E MENU */
+
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--mainBackgroundColor);
+  height: var(--headerHeight);
+  display: flex;
+  justify-content: center;
+  z-index: 1000000;
+}
+
+.boxShadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  position: fixed;
+  background: var(--mainColor);
+  left: -100%;
+  top: var(--headerHeight);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.showMenu {
+  left: 0;
+}
+
+.mainMenu a {
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.mainMenu {
+  margin-bottom: var(--mg32);
+}
+
+.mainMenu li {
+  margin-bottom: var(--mg16);
+}
+
+.signMenu {
+  display: flex;
+}
+
+.signMenu a {
+  background-color: #fff;
+  padding-block: var(--mg8);
+  padding-inline: var(--mg16);
+  border-radius: 4px;
+  color: var(--mainColor);
+}
+
+.signMenu li {
+  margin: var(--mg8);
+}
+
+/* Conteúdo principal da página (Main) */
+
+.main {
+  background-color: var(--mainBackgroundColor);
+  display: flex;
+  justify-content: center;
+  padding-bottom: calc(var(--mg16) * 2);
+  padding-top: calc(var(--mg32) * 2);
+}
+
+.mainImage {
+  margin-bottom: var(--mg16);
+  color: var(--mainFontColor);
+}
+.star {
+  display: none;
+}
+.mainListButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainListButton li {
+  display: flex;
+}
+
+.mainListButton a {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  padding-block: var(--mg16);
+  font-family: var(--secondaryFont);
+}
+
+.mainListButton li:nth-child(1) a {
+  background-color: var(--mainColor);
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.mainListCheck {
+  margin-top: var(--mg8);
+}
+
+.mainListCheck li {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mg8);
+}
+
+.mainListCheck li span {
+  margin-left: var(--mg8);
+  color: var(--secondaryFontColor);
+}
+
+/* Porquê o Fiber (Why Fiberc) */
+.infoWhy {
+  display: flex;
+  justify-content: center;
+  padding-block: calc(var(--mg40) * 2);
+  padding-bottom: var(--mg40);
+}
+.infoList {
+  margin-top: calc(var(--mg32) * 2);
+}
+.infoListItem {
+  margin-bottom: var(--mg40);
+}
+
+/* Diversifica o teu portfolio (infoDiversify) */
+.infoDiversify {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(var(--mg40) * 2);
+}
+
+.infoDiversify .bd-container {
+  background-color: var(--mainColor);
+  padding-inline: var(--mg32);
+  padding-top: calc(var(--mg40) * 2);
+  border-radius: 5px;
+}
+
+.infoDiversifyInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoDiversifyInfo a {
+  color: var(--mainColor);
+  background-color: white;
+  text-align: center;
+  padding-block: var(--mg16);
+  border-radius: 5px;
+  font-family: var(--secondaryFont);
+}
+.infoDiversifyImg {
+  margin-top: var(--mg40);
+}
+.infoDiversifyImg img {
+  border-radius: 5px;
+}
+
+/* Portfolio de pessoas (peoplePortfolio) */
+.peoplePortfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: var(--mg32);
+}
+
+.peoplePortfolioItem {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: var(--mg32);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--mg32);
+}
+
+.peoplePortfolioItem a {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+  margin-top: var(--mg16);
+  font-family: var(--secondaryFont);
+  padding-block: var(--mg16);
+  color: var(--mainColor);
+  /* font-weight: 700; */
+}
+.peoplePortfolioTop {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mg16);
+}
+
+.peoplePortfolioTopImg {
+  width: 6rem;
+  height: 6rem;
+}
+
+.peoplePortfolioTopImg img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.peoplePortfolioTopInfo {
+  margin-left: var(--mg16);
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--mainBackgroundColor);
+  padding-block: calc(var(--mg40) + 2rem);
+}
+
+.footerItem {
+  margin-bottom: var(--mg40);
+}
+
+.footerItem li {
+  margin-bottom: var(--mg8);
+}
+
+.footerItem li a {
+  color: var(--secondaryFontColor);
+}
+footer .bd-container > p a {
+  text-decoration: underline;
+  color: var(--mainColor);
+}
+/* Media queries */
+
+/* Comprimento mínimo de 768px */
+@media (min-width: 768px) {
+  /* Conteúdo principal da página (Main) */
+  .main .bd-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainImage {
+    width: 70rem;
+    height: 70rem;
+    /* background-color: green; */
+    align-self: center;
+  }
+  .mainImage img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Comprimento mínimo de 960px */
+@media (min-width: 960px) {
+  /* CABEÇALHO E MENU */
+  .navToggle {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: auto;
+    flex-direction: row;
+  }
+
+  .mainMenu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 100px;
+  }
+
+  .mainMenu li {
+    margin-bottom: 0;
+    margin-inline: var(--mg16);
+  }
+
+  .mainMenu a {
+    color: var(--mainFontColor);
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  .signMenu li:nth-child(1) a {
+    background: inherit;
+    color: var(--mainFontColor);
+    font-weight: 700;
+    font-size: 1.6rem;
+  }
+
+  .signMenu li:nth-child(2) a {
+    background-color: var(--mainColor);
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-block: calc(var(--mg8) + 0.2rem);
+  }
+
+  /* Conteúdo principal da página (Main) */
+
+  .main {
+    padding-block: calc(var(--mg40) * 2);
+  }
+
+  .star {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mg16);
+  }
+
+  .star svg {
+    margin-right: var(--mg8);
+  }
+
+  .star svg:nth-child(5) {
+    margin-right: var(--mg16);
+  }
+  .main .bd-container {
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mainInfo h2 {
+    font-size: 5.5rem;
+  }
+
+  .mainImage {
+    order: 1;
+    width: 50rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .mainImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mainInfo {
+    width: 55%;
+  }
+
+  .mainListButton {
+    flex-direction: row;
+  }
+
+  .mainListButton a {
+    padding-inline: var(--mg32);
+  }
+
+  .mainListCheck {
+    margin-top: var(--mg16);
+    display: flex;
+  }
+
+  .mainListCheck li {
+    margin-right: var(--mg16);
+  }
+
+  /* Porquê o Fiber (Why Fiber)  */
+  .titleIfonWhy {
+    width: 60rem;
+  }
+
+  .infoList {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--mg40);
+  }
+
+  .infoListItem {
+    width: 30%;
+  }
+
+  /* Diversifica o teu portfolio (infoDiversify) */
+  .infoDiversify .bd-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-inline: var(--mg32);
+  }
+
+  .infoDiversifyInfo {
+    width: 45%;
+  }
+
+  .infoDiversifyInfo a {
+    width: 50%;
+  }
+
+  .infoDiversifyImg {
+    width: 50%;
+  }
+
+  /* Portfolio de pessoas (peoplePortfolio) */
+  .peoplePortfolio .bd-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .peoplePortfolioItem {
+    width: 32%;
+  }
+
+  /* Footer */
+  footer .bd-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerItems {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerItem:nth-child(1) {
+    max-width: 40%;
+  }
+
+  footer .bd-container > p {
+    text-align: center;
+  }
+}
