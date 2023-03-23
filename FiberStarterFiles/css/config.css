@@ -67,7 +67,7 @@ h1 {
 }
 
 .bd-container {
-  max-width: 1200px;
+  max-width: 1024px;
   width: calc(100% - 6rem);
 }
 
